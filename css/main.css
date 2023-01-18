@@ -422,12 +422,16 @@ img {
   padding-bottom: 85px;
 }
 .services-list {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .services-list {
     display: flex;
+    align-items: inherit;
     flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 
@@ -543,4 +547,67 @@ img {
   .services-item__text {
     font-size: 14px;
   }
+}
+
+.visiograph {
+  text-align: center;
+  padding-bottom: 63px;
+}
+@media screen and (min-width: 768px) {
+  .visiograph {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .visiograph > .container {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .visiograph > .container {
+    justify-content: flex-end;
+  }
+}
+.visiograph-container {
+  text-align: center;
+}
+.visiograph-title {
+  font-family: "PT Sans";
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 700;
+}
+.visiograph-after-title {
+  font-family: "PT Sans";
+  font-size: 20px;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .visiograph-container-text {
+    width: 460px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .visiograph-container-text {
+    margin-right: 91px;
+    width: 750px;
+  }
+}
+.visiograph-item:not(:last-child) {
+  margin-bottom: 35px;
+}
+.visiograph-text {
+  font-family: "Times New Roman";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.picture {
+  width: 159px;
+  height: 151px;
+  margin: 0 auto;
+  display: block;
 }/*# sourceMappingURL=main.css.map */

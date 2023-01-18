@@ -1,0 +1,59 @@
+.visiograph {
+  text-align: center;
+  padding-bottom: 63px;
+  @include tablet {
+    text-align: left;
+  }
+
+  & > .container {
+    @include tablet {
+      flex-direction: row-reverse;
+      @include flex(flex, center, center);
+    }
+    @include desktop {
+      justify-content: flex-end;
+    }
+  }
+  &-container {
+    text-align: center;
+  }
+
+  &-title {
+    font-family: "PT Sans";
+    text-transform: uppercase;
+    @include font(22px, 700, null, null);
+  }
+
+  &-after-title {
+    font-family: "PT Sans";
+    @include font(20px, 400, null, null);
+  }
+
+  &-container-text {
+    @include tablet {
+      width: 460px;
+    }
+    @include desktop {
+      margin-right: 91px;
+      width: 750px;
+    }
+  }
+
+  &-item {
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &-text {
+    font-family: "Times New Roman";
+    @include font(18px, 400, null, null);
+  }
+}
+
+.picture {
+  width: 159px;
+  height: 151px;
+  margin: 0 auto;
+  display: block;
+}

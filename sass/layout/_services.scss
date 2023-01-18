@@ -2,14 +2,15 @@
   padding-top: 30px;
   padding-bottom: 85px;
   &-list {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @include tablet {
-      @include flex(flex, null, null);
+      @include flex(flex, inherit, null);
       flex-wrap: wrap;
+      flex-direction: row;
     }
   }
-}
-.container {
 }
 
 .services-item {
