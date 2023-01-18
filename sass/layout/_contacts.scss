@@ -1,0 +1,59 @@
+.header-contacts {
+  @include flex(flex, center, null);
+
+  &-list {
+    @include desktop {
+      height: 42px;
+      width: 423px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+  }
+
+  &-item {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+      @include desktop {
+        margin-bottom: 0;
+      }
+    }
+    @include flex(flex, center, flex-end);
+  }
+
+  &-item__link {
+    font-size: 18px;
+    font-family: "Times New Roman";
+    font-weight: 400;
+    color: #5b5b5b;
+    text-decoration: none;
+  }
+
+  &-item__text {
+    font-size: 18px;
+    font-family: "Times New Roman";
+    font-weight: 400;
+    color: #42be5f;
+  }
+
+  &-item__img {
+    margin-right: 14px;
+  }
+}
+
+.left {
+  margin-left: 54px;
+}
+
+.tablet {
+  @include desktop {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+  @include desktop {
+    @include flex(flex, null, null);
+  }
+}

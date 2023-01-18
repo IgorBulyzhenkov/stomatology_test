@@ -1,0 +1,52 @@
+.mob {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--mob-menu-bg-color);
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  text-align: center;
+  overflow: scroll;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  & > .container {
+    padding: 10px;
+    padding-top: 100px;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &-close-btn {
+    position: absolute;
+    top: 34px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+.nav-mob-list {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.nav-mob-item {
+  @include font(20px, 700, 1.18, 0.02em);
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    width: 50%;
+    border-bottom: 1px solid black;
+  }
+}

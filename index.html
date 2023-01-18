@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Stomatology</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <div class="container">
+        <div class="header-logo">
+          <a href="./index.html" class="logo">
+            <picture class="img">
+              <source
+                srcset="./img/Logo-min.png, ./img/Logo2x@2x-min"
+                media="(min-width: 280px)"
+              />
+              <img src="./img/Logo-min.png" alt="LOGO" />
+            </picture>
+          </a>
+          <h1 class="header-logo__title">Logo Company</h1>
+        </div>
+        <button class="header-open-btn" type="button">
+          <svg width="30" height="30">
+            <use href="./img/image_svg.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="header-nav-container">
+          <nav class="header-nav">
+            <ul class="header-nav-list list">
+              <li class="nav-item">
+                <p class="header-nav-text">О нас</p>
+              </li>
+              <li class="nav-item">
+                <p class="header-nav-text">Услуги и цены</p>
+              </li>
+              <li class="nav-item">
+                <p class="header-nav-text">Фото работ</p>
+              </li>
+              <li class="nav-item">
+                <p class="header-nav-text">Контакты</p>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-contacts">
+            <ul class="header-contacts-list">
+              <li class="header-contacts-item">
+                <img
+                  src="./img/phone.png"
+                  alt="phone"
+                  class="header-contacts-item__img"
+                  width="22"
+                  height="14"
+                />
+                <a href="tel:(044) 333-33-33" class="header-contacts-item__link"
+                  >(044) 333-33-33</a
+                >
+              </li>
+              <li class="header-contacts-item left">
+                <img
+                  src="./img/mobile.png"
+                  alt="mobile"
+                  class="header-contacts-item__img"
+                  width="9"
+                  height="16"
+                />
+                <a href="tel:(096) 111-11-11" class="header-contacts-item__link"
+                  >(096) 111-11-11</a
+                >
+              </li>
+              <li class="header-contacts-item desktop">
+                <img
+                  src="./img/callback_icon.png"
+                  alt="callback"
+                  class="header-contacts-item__img"
+                  width="13"
+                  height="13"
+                />
+                <p class="header-contacts-item__text">
+                  Заказать обратный звонок
+                </p>
+              </li>
+              <li class="header-contacts-item left">
+                <img
+                  src="./img/mobile.png"
+                  alt="mobile"
+                  class="header-contacts-item__img"
+                  width="9"
+                  height="16"
+                />
+                <a href="tel:(066) 222-22-22" class="header-contacts-item__link"
+                  >(066) 222-22-22</a
+                >
+              </li>
+              <li class="header-contacts-item tablet">
+                <img
+                  src="./img/callback_icon.png"
+                  alt="callback"
+                  class="header-contacts-item__img"
+                  width="13"
+                  height="13"
+                />
+                <p class="header-contacts-item__text">
+                  Заказать обратный звонок
+                </p>
+              </li>
+            </ul>
+            <button class="button" type="button">Записаться на приём</button>
+          </div>
+        </div>
+        <!-- mob-menu -->
+        <div class="mob is-hidden">
+          <div class="container">
+            <button class="mob-close-btn" type="button">
+              <svg width="30" height="30">
+                <use href="./img/image_svg.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <nav class="nav-mob">
+              <ul class="nav-mob-list list">
+                <li class="nav-mob-item">
+                  <p class="nav-mob-text">О нас</p>
+                </li>
+                <li class="nav-mob-item">
+                  <p class="nav-mob-text">Услуги и цены</p>
+                </li>
+                <li class="nav-mob-item">
+                  <p class="nav-mob-text">Фото работ</p>
+                </li>
+                <li class="nav-mob-item">
+                  <p class="nav-mob-text">Контакты</p>
+                </li>
+              </ul>
+            </nav>
+            <div class="mob-contacts">
+              <ul class="mob-contacts-list">
+                <li class="mob-contacts-item">
+                  <img
+                    src="./img/phone.png"
+                    alt="phone"
+                    class="mob-contacts-item__img"
+                    width="22"
+                    height="14"
+                  />
+                  <a href="tel:(044) 333-33-33" class="mob-contacts-item__link"
+                    >(044) 333-33-33</a
+                  >
+                </li>
+                <li class="mob-contacts-item">
+                  <img
+                    src="./img/mobile.png"
+                    alt="mobile"
+                    class="mob-contacts-item__img"
+                    width="9"
+                    height="16"
+                  />
+                  <a href="tel:(096) 111-11-11" class="mob-contacts-item__link"
+                    >(096) 111-11-11</a
+                  >
+                </li>
+                <li class="mob-contacts-item">
+                  <img
+                    src="./img/mobile.png"
+                    alt="mobile"
+                    class="mob-contacts-item__img"
+                    width="9"
+                    height="16"
+                  />
+                  <a href="tel:(066) 222-22-22" class="mob-contacts-item__link"
+                    >(066) 222-22-22</a
+                  >
+                </li>
+                <li class="mob-contacts-item">
+                  <img
+                    src="./img/callback_icon.png"
+                    alt="callback"
+                    class="mob-contacts-item__img"
+                    width="13"
+                    height="13"
+                  />
+                  <p class="mob-contacts-item__text">
+                    Заказать обратный звонок
+                  </p>
+                </li>
+              </ul>
+              <button class="button" type="button">Записаться на приём</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--Main-->
+    <main class="main">
+      <!--Hero-->
+      <section class="hero">
+        <div class="container">
+          <h2 class="hero-title">Гигиена полости рта</h2>
+          <ul class="hero-list">
+            <li class="hero-list__item">
+              <p class="hero-list__item--text">ультразвуковая обработка</p>
+            </li>
+            <li class="hero-list__item">
+              <p class="hero-list__item--text">Air-Flow</p>
+            </li>
+            <li class="hero-list__item">
+              <p class="hero-list__item--text">
+                полировка професиональными пастами
+              </p>
+            </li>
+            <li class="hero-list__item">
+              <p class="hero-list__item--text">глубокое фторирование эмали</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--Services-->
+      <section class="services">
+        <div class="container">
+          <ul class="services-list">
+            <li class="services-item--children">
+              <img
+                src="./img/children-min.png"
+                alt="children"
+                class="services-item__img"
+                width="60"
+                height="80"
+              />
+              <h3 class="services-item__title">детская стоматология</h3>
+              <p class="services-item__text">
+                Раздел стоматологии, занимающийся изучением этиологии,
+                диагностики, методов профилактики и лечения зубо-челюстных
+                аномалий.
+              </p>
+            </li>
+            <li class="services-item--terapia">
+              <img
+                src="./img/terapyia-min.png"
+                alt="terapia"
+                class="services-item__img"
+              />
+              <h3 class="services-item__title">терапия</h3>
+              <p class="services-item__text">
+                Задача терапевтической стоматологии заключается в диагностике и
+                лечении заболеваний зубов и некоторых прилегающих областей.
+              </p>
+            </li>
+            <li class="services-item--ortodont">
+              <img
+                src="./img/ortodont-min.png"
+                alt="ortodont"
+                class="services-item__img"
+              />
+              <h3 class="services-item__title">Ортодонтия</h3>
+              <p class="services-item__text">
+                Раздел стоматологии, занимающийся изучением этиологии,
+                диагностики, методов профилактики и лечения зубо-челюстных
+                аномалий.
+              </p>
+            </li>
+            <li class="services-item--ortoped">
+              <img
+                src="./img/ortoped-min.png"
+                alt="ortoped"
+                class="services-item__img"
+              />
+              <h3 class="services-item__title">ортопедия</h3>
+              <p class="services-item__text">
+                Несъемное протезирование зубов предполагает изготовление и
+                установку постоянных, стационарных зубных протезов.
+              </p>
+            </li>
+            <li class="services-item--implant">
+              <img
+                src="./img/impl-min.png"
+                alt="implant"
+                class="services-item__img"
+              />
+              <h3 class="services-item__title">имплантация</h3>
+              <p class="services-item__text">
+                Это метод вживления искусственных опор для несъемных и съемных
+                зубных протезов.
+              </p>
+            </li>
+            <li class="services-item--operation">
+              <img
+                src="./img//operation-min.png"
+                alt="operation"
+                class="services-item__img"
+              />
+              <h3 class="services-item__title">хирургия</h3>
+              <p class="services-item__text">
+                Раздел стоматологии, практикующий такие методы лечения как:
+                операции по удалению зубов, подсадка костной ткани и т.д.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
+    <script src="./js/mobile-menu.js" type="module"></script>
+  </body>
+</html>

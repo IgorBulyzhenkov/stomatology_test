@@ -1,0 +1,20 @@
+.header-logo {
+  margin-top: 10px;
+  @include flex(flex, flex-end, null);
+  &__title {
+    font-family: "Times New Roman";
+    font-weight: 700;
+    font-size: 38px;
+    color: #5bd077;
+    width: 159px;
+    height: 77px;
+  }
+}
+
+.logo {
+  width: 58px;
+  height: 85px;
+  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
+}

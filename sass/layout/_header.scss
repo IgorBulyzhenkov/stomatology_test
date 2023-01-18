@@ -1,0 +1,71 @@
+.header {
+  padding-bottom: 17px;
+  @include tablet {
+    padding-top: 21px;
+  }
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  & > .container {
+    @include flex(flex, center, null);
+  }
+
+  &-nav {
+    @include tablet {
+      margin-bottom: 24px;
+      @include flex(flex, center, null);
+    }
+
+    @include desktop {
+      justify-content: flex-end;
+    }
+    &-container {
+      display: none;
+      @include tablet {
+        display: block;
+        margin-left: auto;
+      }
+    }
+    @include tablet {
+      &-list {
+        @include flex(flex, center, null);
+      }
+      &-text {
+        font-family: "PT Sans";
+        @include font(16px, 700, null, 0.02em);
+
+        @include desktop {
+          @include font(20px, null, null, null);
+        }
+      }
+    }
+  }
+
+  .nav {
+    @include tablet {
+      &-item {
+        &:not(:last-child)::after {
+          content: "";
+          margin-right: 19px;
+          margin-left: 19px;
+          border-left: 1px solid #505050;
+          height: 10px;
+        }
+        @include flex(flex, center, null);
+      }
+    }
+  }
+
+  &-open-btn {
+    width: 40px;
+    height: 40px;
+    @include tablet {
+      display: none;
+    }
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+  }
+}

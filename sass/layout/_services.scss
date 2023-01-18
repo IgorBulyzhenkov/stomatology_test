@@ -1,0 +1,111 @@
+.services {
+  padding-top: 30px;
+  padding-bottom: 85px;
+  &-list {
+    display: block;
+    @include tablet {
+      @include flex(flex, null, null);
+      flex-wrap: wrap;
+    }
+  }
+}
+.container {
+}
+
+.services-item {
+  &--children {
+    max-width: 365px;
+    padding-top: 24px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 39px;
+    text-align: center;
+    background-color: #5bd077;
+    @include desktop {
+      max-width: 380px;
+    }
+  }
+
+  &--terapia {
+    max-width: 365px;
+    padding-top: 24px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 39px;
+    text-align: center;
+    background-color: #64dcb9;
+    @include desktop {
+      max-width: 380px;
+    }
+  }
+
+  &--ortodont {
+    max-width: 365px;
+    padding-top: 24px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 39px;
+    text-align: center;
+    background-color: #63cecd;
+    @include desktop {
+      max-width: 380px;
+    }
+  }
+
+  &--ortoped {
+    max-width: 365px;
+    padding-top: 24px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 39px;
+    text-align: center;
+    background-color: #50aac7;
+    @include desktop {
+      max-width: 380px;
+    }
+  }
+
+  &--implant {
+    max-width: 365px;
+    padding-top: 24px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 39px;
+    text-align: center;
+    background-color: #4a99c2;
+    @include desktop {
+      max-width: 380px;
+    }
+  }
+  &--operation {
+    max-width: 365px;
+    padding-top: 24px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 39px;
+    text-align: center;
+    background-color: #4a88c2;
+    @include desktop {
+      max-width: 380px;
+    }
+  }
+}
+.services-item__img {
+  margin: 0 auto;
+  margin-bottom: 21px;
+}
+.services-item__title {
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 25px;
+  font-family: "PT Sans";
+  @include font(24px, 700, null, 0.02em);
+}
+.services-item__text {
+  color: white;
+  font-family: "PT Sans";
+  @include font(13px, 400, 1.12, 0.05em);
+  @include desktop {
+    @include font(14px, null, null, null);
+  }
+}

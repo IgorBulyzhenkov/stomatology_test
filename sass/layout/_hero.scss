@@ -1,0 +1,47 @@
+.hero {
+  //   height: 421px;
+  min-width: 320px;
+  background-image: url("../img/Sl-min.jpg");
+  padding-top: 228px;
+  padding-bottom: 22px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../img/Sl2x-min.jpg");
+  }
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include tablet{
+    padding-top: 269px;
+  }
+
+  & > .container {
+    padding-left: 30px;
+  }
+
+  &-title {
+    color: white;
+    font-family: "PT Sans";
+    @include font(38px, 700, 1.12, 0.02em);
+  }
+
+  &-list {
+    list-style: disc;
+    color: white;
+    padding-left: 20px;
+  }
+
+  &-list__item {
+    &:not(:last-child) {
+      margin-bottom: 2px;
+    }
+  }
+
+  &-list__item--text {
+    color: white;
+    font-family: "PT Sans";
+    @include font(18px, 400, null, 0.02em);
+  }
+}
