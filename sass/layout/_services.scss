@@ -14,70 +14,11 @@
 }
 
 .services-item {
-  &--children {
-    max-width: 365px;
-    padding-top: 24px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-bottom: 39px;
-    text-align: center;
-    background-color: #5bd077;
-    @include desktop {
-      max-width: 380px;
-    }
-  }
-
-  &--terapia {
-    max-width: 365px;
-    padding-top: 24px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-bottom: 39px;
-    text-align: center;
-    background-color: #64dcb9;
-    @include desktop {
-      max-width: 380px;
-    }
-  }
-
-  &--ortodont {
-    max-width: 365px;
-    padding-top: 24px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-bottom: 39px;
-    text-align: center;
-    background-color: #63cecd;
-    @include desktop {
-      max-width: 380px;
-    }
-  }
-
-  &--ortoped {
-    max-width: 365px;
-    padding-top: 24px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-bottom: 39px;
-    text-align: center;
-    background-color: #50aac7;
-    @include desktop {
-      max-width: 380px;
-    }
-  }
-
-  &--implant {
-    max-width: 365px;
-    padding-top: 24px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-bottom: 39px;
-    text-align: center;
-    background-color: #4a99c2;
-    @include desktop {
-      max-width: 380px;
-    }
-  }
+  &--children,
+  &--terapia,
+  &--ortodont,
+  &--ortoped,
+  &--implant,
   &--operation {
     max-width: 365px;
     padding-top: 24px;
@@ -85,10 +26,31 @@
     padding-right: 35px;
     padding-bottom: 39px;
     text-align: center;
-    background-color: #4a88c2;
     @include desktop {
       max-width: 380px;
     }
+  }
+  &--children {
+    background-color: #5bd077;
+  }
+
+  &--terapia {
+    background-color: #64dcb9;
+  }
+
+  &--ortodont {
+    background-color: #63cecd;
+  }
+
+  &--ortoped {
+    background-color: #50aac7;
+  }
+
+  &--implant {
+    background-color: #4a99c2;
+  }
+  &--operation {
+    background-color: #4a88c2;
   }
 }
 .services-item__img {

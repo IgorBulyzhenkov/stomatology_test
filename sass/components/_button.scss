@@ -11,4 +11,9 @@
     height: 39px;
     @include flex(flex, center, null);
   }
+
+  &:hover,
+  &:focus {
+    background-color: #50ba6a;
+  }
 }
