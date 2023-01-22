@@ -186,13 +186,15 @@
   }
 }
 
-.place_holder {
+.place_holder,
+.place_holder__data,
+.place_holder__time {
   z-index: 100;
   cursor: text;
   width: 185px;
   position: absolute;
   top: 9px;
-  left: 5px;
+  left: 13px;
   text-align: left;
   display: none;
   padding-bottom: 7px;
@@ -202,7 +204,14 @@
   background-color: hsl(0deg 0% 100%);
 }
 
-.appointement-label input:invalid + .place_holder {
+.place_holder__data,
+.place_holder__time {
+  margin-left: 28px;
+}
+
+.appointement-label input:invalid + .place_holder,
+.appointement-label input:invalid + .place_holder__data,
+.appointement-label input:invalid + .place_holder__time {
   display: inline;
 }
 

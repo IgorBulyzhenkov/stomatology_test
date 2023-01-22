@@ -563,109 +563,167 @@
       <section class="appointement">
         <div class="container">
           <h3 class="appointement-title">записаться на приём</h3>
-         <div class="appointement-container">
-           <div class="appointement-text__container">
-            <p class="appointement-text">
-              Чтобы записаться на приём к врачу заполните эту простую форму.
-              Укажите удобные для вас дату и время посещения. После получения
-              заявки мы перезвоним вам для уточнения, возможен ли приём в это
-              время и если нет, согласуем другую подходящую дату.
-            </p>
-            <p class="appointement-after-text">
-              <span class="appointement-span">*</span> Поля со звёздочкой
-              обязательны для заполнения.
-            </p>
-            <picture class="appointement-pictures__arrow-left">
-              <source
-                srcset="./img/Arrow_green.png, ./img/Arrow_green2x.png"
-                media="(min-width: 320px)"
-              />
-              <img
-                src="./img/Arrow_green.png"
-                alt="arrow_left"
-                class="appointement-img__arrow-left"
-              />
-            </picture>
+          <div class="appointement-container">
+            <div class="appointement-text__container">
+              <p class="appointement-text">
+                Чтобы записаться на приём к врачу заполните эту простую форму.
+                Укажите удобные для вас дату и время посещения. После получения
+                заявки мы перезвоним вам для уточнения, возможен ли приём в это
+                время и если нет, согласуем другую подходящую дату.
+              </p>
+              <p class="appointement-after-text">
+                <span class="appointement-span">*</span> Поля со звёздочкой
+                обязательны для заполнения.
+              </p>
+              <picture class="appointement-pictures__arrow-left">
+                <source
+                  srcset="./img/Arrow_green.png, ./img/Arrow_green2x.png"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./img/Arrow_green.png"
+                  alt="arrow_left"
+                  class="appointement-img__arrow-left"
+                />
+              </picture>
+            </div>
+            <form class="appointement-form">
+              <label class="appointement-label">
+                <picture class="appointement-pictures">
+                  <source
+                    srcset="./img/Human.png, ./img/Human2x.png"
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./img/Human.png"
+                    alt="human"
+                    class="appointement-img__human"
+                  />
+                </picture>
+                <input type="text" class="appointement-input" required="1" />
+                <div class="place_holder">Ваше имя <span>*</span></div>
+              </label>
+              <label class="appointement-label">
+                <picture class="appointement-pictures">
+                  <source
+                    srcset="./img/Phone_green.png, ./img/Phone2x.png"
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./img/Phone_green.png"
+                    alt="phone"
+                    class="appointement-img__phone"
+                  />
+                </picture>
+                <input type="text" class="appointement-input" required="1" />
+                <div class="place_holder">Номер телефона <span>*</span></div>
+              </label>
+              <label class="appointement-label">
+                <picture class="appointement-pictures">
+                  <source
+                    srcset="./img/Calendar.png, ./img/Calendar2x.png"
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./img/Calendar.png"
+                    alt="calendar"
+                    class="appointement-img__calendar"
+                  />
+                </picture>
+                <input type="date" class="appointement-input" required="1" />
+                <div class="place_holder__data">
+                  Дата посещения <span>*</span>
+                </div>
+              </label>
+              <label class="appointement-label">
+                <picture class="appointement-pictures">
+                  <source
+                    srcset="./img/Clock.png, ./img/Clock2x.png"
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./img/Clock.png"
+                    alt="clock"
+                    class="appointement-img__clock"
+                  />
+                </picture>
+                <input type="time" class="appointement-input" required="1" />
+                <div class="place_holder__time">
+                  Время посещения <span>*</span>
+                </div>
+              </label>
+              <textarea
+                cols="30"
+                rows="10"
+                class="appointement-textarea"
+                placeholder="Здесь можно указать причину обращения или ваши пожелания, если таковые имеются..."
+              ></textarea>
+              <button class="appointement-btn" type="submit">
+                Отправить заявку
+              </button>
+            </form>
           </div>
-          <form class="appointement-form">
-            <label class="appointement-label">
-              <picture class="appointement-pictures">
-                <source
-                  srcset="./img/Human.png, ./img/Human2x.png"
-                  media="(min-width: 320px)"
-                />
-                <img
-                  src="./img/Human.png"
-                  alt="human"
-                  class="appointement-img__human"
-                />
-              </picture>
-              <input type="text" class="appointement-input" required="1" />
-              <div class="place_holder">Ваше имя <span>*</span></div>
-            </label>
-            <label class="appointement-label">
-              <picture class="appointement-pictures">
-                <source
-                  srcset="./img/Phone_green.png, ./img/Phone2x.png"
-                  media="(min-width: 320px)"
-                />
-                <img
-                  src="./img/Phone_green.png"
-                  alt="phone"
-                  class="appointement-img__phone"
-                />
-              </picture>
-              <input type="text" class="appointement-input" required="1" />
-              <div class="place_holder">Номер телефона <span>*</span></div>
-            </label>
-            <label class="appointement-label">
-              <picture class="appointement-pictures">
-                <source
-                  srcset="./img/Calendar.png, ./img/Calendar2x.png"
-                  media="(min-width: 320px)"
-                />
-                <img
-                  src="./img/Calendar.png"
-                  alt="calendar"
-                  class="appointement-img__calendar"
-                />
-              </picture>
-              <input type="date" class="appointement-input" required="1" />
-              <div class="place_holder">Дата посещения <span>*</span></div>
-            </label>
-            <label class="appointement-label">
-              <picture class="appointement-pictures">
-                <source
-                  srcset="./img/Clock.png, ./img/Clock2x.png"
-                  media="(min-width: 320px)"
-                />
-                <img
-                  src="./img/Clock.png"
-                  alt="clock"
-                  class="appointement-img__clock"
-                />
-              </picture>
-              <input type="time" class="appointement-input" required="1" />
-              <div class="place_holder">Время посещения <span>*</span></div>
-            </label>
-            <textarea
-              cols="30"
-              rows="10"
-              class="appointement-textarea"
-              placeholder="Здесь можно указать причину обращения или ваши пожелания, если таковые имеются..."
-            ></textarea>
-            <button class="appointement-btn" type="submit">
-              Отправить заявку
-            </button>
-          </form>
-         </div>
         </div>
       </section>
     </main>
 
     <!--Footer-->
     <footer class="footer">
-      <div class="container"></div>
+      <div class="container">
+        <nav class="footer-nav">
+          <ul class="footer-nav-list list">
+            <li class="footer-nav-item">
+              <p class="footer-nav-text">О нас</p>
+            </li>
+            <li class="footer-nav-item">
+              <p class="footer-nav-text">Услуги и цены</p>
+            </li>
+            <li class="footer-nav-item">
+              <p class="footer-nav-text">Фото работ</p>
+            </li>
+            <li class="footer-nav-item">
+              <p class="footer-nav-text">Контакты</p>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-container">
+          <ul class="footer-list list">
+            <li class="footer-item">
+              <p class="footer-item__text">Клиника семейной медицины</p>
+            </li>
+            <li class="footer-item">
+              <p class="footer-item__text">ООО «Название компании»</p>
+            </li>
+          </ul>
+          <div class="footer-tm">
+            <picture class="footer-tm-picture">
+              <source
+                srcset="./img/Marat-logo.png, ./img/Marat-logo2x@2x.png"
+                media="(min-width: 320px)"
+              />
+              <img
+                src="./img/Marat-logo.png"
+                alt="Marat"
+                class="footer-tm-picture__img"
+              />
+            </picture>
+            <ul class="footer-tm-list">
+              <li class="footer-tm-item">
+                <p class="footer-tm-item__text">Разработка сайта — MARAT</p>
+              </li>
+              <li class="footer-tm-item">
+                <p class="footer-tm-item__text">© COPYRIGHT</p>
+              </li>
+              <li class="footer-tm-item">
+                <p class="footer-tm-item__text">THE MARAT COMPANY INC.</p>
+              </li>
+              <li class="footer-tm-item">
+                <p class="footer-tm-item__text">2016 ALL RIGHTS RESERVED</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="./js/mobile-menu.js" type="module"></script>
   </body>
