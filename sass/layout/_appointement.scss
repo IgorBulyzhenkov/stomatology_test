@@ -1,0 +1,231 @@
+.appointement {
+  background-color: #e8f2ef;
+  padding-top: 26px;
+  padding-bottom: 60px;
+  & > .container {
+    @include flex(flex, null, null);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &-container {
+    @include desktop {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  &-title {
+    margin-bottom: 30px;
+    color: #56b095;
+    text-transform: uppercase;
+    font-family: "PT Sans";
+    @include font(30px, 700, 1.12, null);
+  }
+
+  &-form {
+    margin-top: 20px;
+    @include tablet {
+      @include flex(flex, center, space-between);
+      flex-wrap: wrap;
+    }
+
+    @include desktop {
+      width: 750px;
+      margin-top: 0;
+    }
+  }
+
+  &-label {
+    display: block;
+    width: 100%;
+    height: 52px;
+    margin-bottom: 18px;
+    position: relative;
+    overflow: hidden;
+    @include tablet {
+      width: 359px;
+    }
+  }
+
+  &-pictures {
+    position: absolute;
+    z-index: 2;
+    width: 37px;
+    display: flex;
+    height: 40px;
+    top: 6px;
+    left: 3px;
+    align-items: center;
+    background-color: hsl(0deg 0% 100%);
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  &-img__human {
+    width: 18px;
+    height: 20px;
+  }
+
+  &-img__phone {
+    width: 12px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  //   &-img__calendar {
+  //   }
+
+  //   &-img__clock {
+  //   }
+
+  &-input {
+    width: 100%;
+    height: 100%;
+    padding-left: 46px;
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid #d9d9d9;
+    color: #a6a6a6;
+    font-family: "PT Sans";
+    position: relative;
+    @include font(18px, 400, null, null);
+    &::placeholder {
+      color: #a6a6a6;
+      font-family: "PT Sans";
+      @include font(18px, 400, null, null);
+    }
+
+    @include tablet {
+      width: 359px;
+    }
+  }
+
+  &-textarea {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 17px;
+    padding: 15px;
+    color: #a6a6a6;
+    resize: none;
+    width: 100%;
+    height: 250px;
+    font-family: "PT Sans";
+    @include font(18px, 400, null, null);
+    &::placeholder {
+      color: #a6a6a6;
+      font-family: "PT Sans";
+      @include font(18px, 400, null, null);
+    }
+
+    @include tablet {
+      height: 238px;
+    }
+
+    @include desktop {
+      height: 85px;
+    }
+  }
+
+  &-btn {
+    padding: 21px 37px 15px 36px;
+    background-color: #52ceaa;
+    color: #ffffff;
+    font-family: "PT Sans";
+    @include font(20px, 400, null, null);
+    border: none;
+    border-radius: 4px;
+    &:hover,
+    &:focus {
+      background-color: #55ac99;
+    }
+
+    @include tablet {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  &-text__container {
+    @include desktop {
+      width: 360px;
+      text-align: left;
+    }
+  }
+
+  &-text {
+    color: #428397;
+    margin-bottom: 25px;
+    font-family: "PT Sans";
+    @include font(16px, 400, null, null);
+  }
+
+  &-after-text {
+    color: #428397;
+    font-family: "PT Sans";
+    @include font(16px, 400, null, null);
+    margin-bottom: 20px;
+  }
+
+  &-span {
+    color: #f55656;
+  }
+
+  &-pictures__arrow-left {
+  }
+
+  &-img__arrow-left {
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotateZ(270deg);
+    @include desktop {
+      transform: rotateZ(360deg);
+    }
+  }
+}
+
+.place_holder {
+  z-index: 100;
+  cursor: text;
+  width: 185px;
+  position: absolute;
+  top: 9px;
+  left: 5px;
+  text-align: left;
+  display: none;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  color: hsl(0deg 0% 83%);
+  margin-left: 35px;
+  background-color: hsl(0deg 0% 100%);
+}
+
+.appointement-label input:invalid + .place_holder {
+  display: inline;
+}
+
+.place_holder span {
+  color: red;
+  position: absolute;
+  top: 0;
+}
+
+.appointement-input[type="time"],
+.appointement-input[type="date"] {
+  width: 100%;
+  height: 100%;
+  padding-left: 6px;
+  display: flex;
+  flex-direction: row-reverse;
+  border: 1px solid #d9d9d9;
+  color: #a6a6a6;
+  font-family: "PT Sans";
+  position: relative;
+  @include font(18px, 400, null, null);
+}
+
+.appointement-input[type="date"] {
+  padding-left: 18px;
+}

@@ -558,6 +558,109 @@
           <button class="feedback-btn" type="button">Читать все отзывы</button>
         </div>
       </section>
+
+      <!--Appointement-->
+      <section class="appointement">
+        <div class="container">
+          <h3 class="appointement-title">записаться на приём</h3>
+         <div class="appointement-container">
+           <div class="appointement-text__container">
+            <p class="appointement-text">
+              Чтобы записаться на приём к врачу заполните эту простую форму.
+              Укажите удобные для вас дату и время посещения. После получения
+              заявки мы перезвоним вам для уточнения, возможен ли приём в это
+              время и если нет, согласуем другую подходящую дату.
+            </p>
+            <p class="appointement-after-text">
+              <span class="appointement-span">*</span> Поля со звёздочкой
+              обязательны для заполнения.
+            </p>
+            <picture class="appointement-pictures__arrow-left">
+              <source
+                srcset="./img/Arrow_green.png, ./img/Arrow_green2x.png"
+                media="(min-width: 320px)"
+              />
+              <img
+                src="./img/Arrow_green.png"
+                alt="arrow_left"
+                class="appointement-img__arrow-left"
+              />
+            </picture>
+          </div>
+          <form class="appointement-form">
+            <label class="appointement-label">
+              <picture class="appointement-pictures">
+                <source
+                  srcset="./img/Human.png, ./img/Human2x.png"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./img/Human.png"
+                  alt="human"
+                  class="appointement-img__human"
+                />
+              </picture>
+              <input type="text" class="appointement-input" required="1" />
+              <div class="place_holder">Ваше имя <span>*</span></div>
+            </label>
+            <label class="appointement-label">
+              <picture class="appointement-pictures">
+                <source
+                  srcset="./img/Phone_green.png, ./img/Phone2x.png"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./img/Phone_green.png"
+                  alt="phone"
+                  class="appointement-img__phone"
+                />
+              </picture>
+              <input type="text" class="appointement-input" required="1" />
+              <div class="place_holder">Номер телефона <span>*</span></div>
+            </label>
+            <label class="appointement-label">
+              <picture class="appointement-pictures">
+                <source
+                  srcset="./img/Calendar.png, ./img/Calendar2x.png"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./img/Calendar.png"
+                  alt="calendar"
+                  class="appointement-img__calendar"
+                />
+              </picture>
+              <input type="date" class="appointement-input" required="1" />
+              <div class="place_holder">Дата посещения <span>*</span></div>
+            </label>
+            <label class="appointement-label">
+              <picture class="appointement-pictures">
+                <source
+                  srcset="./img/Clock.png, ./img/Clock2x.png"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./img/Clock.png"
+                  alt="clock"
+                  class="appointement-img__clock"
+                />
+              </picture>
+              <input type="time" class="appointement-input" required="1" />
+              <div class="place_holder">Время посещения <span>*</span></div>
+            </label>
+            <textarea
+              cols="30"
+              rows="10"
+              class="appointement-textarea"
+              placeholder="Здесь можно указать причину обращения или ваши пожелания, если таковые имеются..."
+            ></textarea>
+            <button class="appointement-btn" type="submit">
+              Отправить заявку
+            </button>
+          </form>
+         </div>
+        </div>
+      </section>
     </main>
 
     <!--Footer-->
