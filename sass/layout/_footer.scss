@@ -82,6 +82,10 @@
 
   &-list {
     margin-bottom: 10px;
+    @include tablet {
+      text-align: left;
+      margin-bottom: 0;
+    }
   }
 
   &-item__text {

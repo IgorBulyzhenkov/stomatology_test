@@ -1119,6 +1119,12 @@ img {
 .footer-list {
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .footer-list {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
 .footer-item__text {
   color: #ffffff;
   font-family: "Times New Roman";
