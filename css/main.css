@@ -10,6 +10,10 @@ body {
   overflow: hidden;
 }
 
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 p,
 h1,
 h2,
