@@ -35,7 +35,8 @@
       &-text {
         font-family: "PT Sans";
         @include font(16px, 700, null, 0.02em);
-
+        color: #505050;
+        text-decoration: none;
         @include desktop {
           @include font(20px, null, null, null);
         }

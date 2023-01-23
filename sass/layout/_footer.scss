@@ -47,6 +47,7 @@
   &-nav-text {
     color: #ffffff;
     font-family: "PT Sans";
+    text-decoration: none;
     @include font(16px, 400, 1.12, null);
     cursor: pointer;
   }
