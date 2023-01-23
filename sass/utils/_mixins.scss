@@ -1,30 +1,30 @@
 @mixin font($fs, $fw, $lh, $ls) {
-    font-size: $fs;
-    font-weight: $fw;
-    line-height: $lh;
-    letter-spacing: $ls;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
 }
 
 @mixin flex($d, $ai, $jc) {
-    display: $d;
-    align-items: $ai;
-    justify-content: $jc;
+  display: $d;
+  align-items: $ai;
+  justify-content: $jc;
 }
 
 @mixin mobil {
-    @media screen and (min-width: 480px) {
-        @content;
-    }
+  @media screen and (min-width: 480px) {
+    @content;
+  }
 }
 
 @mixin tablet {
-    @media screen and (min-width: 768px) {
-        @content;
-    }
+  @media screen and (min-width: 768px) {
+    @content;
+  }
 }
 
 @mixin desktop {
-    @media screen and (min-width: 1140px) {
-        @content;
-    }
+  @media screen and (min-width: 1240px) {
+    @content;
+  }
 }
